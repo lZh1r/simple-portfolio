@@ -1,0 +1,230 @@
+html {
+  body {
+    animation: fadeIn 2s;
+    background: #101120;
+    margin: 0;
+  }
+  header {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    text-align: center;
+    color: #d5d5d5;
+    background: #16192e;
+    border-bottom: 2px solid #23284a;
+  }
+  header h1 {
+    text-shadow: #7cafda 0 0 5px;
+    margin: 15px 20px;
+    text-align: center;
+    color: #d5d5d5;
+  }
+  main {
+    padding-top: 150px;
+  }
+  footer {
+    text-align: center;
+    padding-bottom: 40px;
+    color: #d5d5d5;
+    background: #101120 radial-gradient(circle at bottom, rgba(75, 75, 165, 0.32) 5%, #101120 30%) ;
+    overflow: hidden;
+  }
+  footer h1 {
+    font-size: 50px;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #d5d5d5;
+  }
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+/* Navigation bar */
+
+.navbar {
+  background: #16192e;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 25px;
+  padding: 20px 20px;
+  color: #d5d5d5;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  text-shadow: #7cafda 0 0 15px;
+  transform: scale(1.05);
+}
+
+/* Overview card */
+
+.main-card {
+  animation: fadeIn 2s;
+  font-size: 30px;
+  color: #d5d5d5;
+  text-align: center;
+  display: flex;
+  height: auto;
+  justify-content: space-evenly;
+  margin: 0 5em 0;
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.19) 5px 5px 10px;
+  border-radius: 28px;
+  background: #16192e linear-gradient(to right bottom, rgba(75, 75, 165, 0.32), #0f1120);
+}
+
+.skill-icon {
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+}
+
+.portrait {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.main-card h2 {
+  color: #ffffff;
+  text-shadow: #7cafda 0 0 5px;
+}
+
+.skill-list {
+  border: #3e487e solid 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 28px;
+  padding: 30px;
+  background: #1e203c;
+  transition: 0.2s ease-in-out;
+}
+
+.skill-list:hover {
+  box-shadow: #7cafda 0 0 5px;
+}
+
+
+.portrait-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* Portfolio */
+
+.portfolio-title {
+  text-align: center;
+  color: #d5d5d5;
+  margin: 100px;
+}
+
+.portfolio-card {
+  font-size: 30px;
+  background: #101120 linear-gradient(to bottom right, #0f1120, rgba(75, 75, 165, 0.32));
+  color: #d5d5d5;
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0 3em;
+  box-shadow: rgba(0, 0, 0, 0.19) 5px 5px 10px;
+}
+
+.portfolio-card button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 14px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #d5d5d5;
+  background: #2a2a59;
+  transition: 0.2s ease-in-out;
+}
+
+.portfolio-card button:hover {
+  box-shadow: #7cafda 0 0 5px;
+  background: #7cafda;
+  color: #000000;
+  scale: 1.1 1.1;
+}
+
+.portfolio-card h2 {
+  margin: 0;
+  color: #ffffff;
+  text-shadow: #7cafda 0 0 5px;
+  padding-top: 30px;
+}
+
+.portfolio-card section {
+  padding-left: 7em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.portfolio-card img {
+  padding: 20px;
+  border-radius: 28px;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 38px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #d5d5d5;
+  transition: 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+  text-shadow: #7cafda 0 0 15px;
+  transform: scale(1.05);
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #16192e;
+  border-radius: 28px;
+  border-left: 2px solid #23284a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b3bbe4;
+  border-radius: 28px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9494b8;
+}

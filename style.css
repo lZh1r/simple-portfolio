@@ -1,7 +1,14 @@
+:root {
+  --main-bg-color: #101120;
+  --secondary-bg-color: #16192e;
+  --text-color: #d5d5d5;
+  --text-glow-color: #7cafda;
+}
+
 html {
   body {
     animation: fadeIn 2s;
-    background: #101120;
+    background: var(--main-bg-color);
     margin: 0;
   }
   header {
@@ -11,15 +18,15 @@ html {
     display: flex;
     text-align: center;
     justify-content: space-between;
-    color: #d5d5d5;
+    color: var(--text-color);
     background: #16192e;
     border-bottom: 2px solid #23284a;
   }
   header h1 {
-    text-shadow: #7cafda 0 0 5px;
+    text-shadow: var(--text-glow-color) 0 0 5px;
     margin: 15px 20px;
     text-align: center;
-    color: #d5d5d5;
+    color: var(--text-color);
     float: right;
   }
   main {
@@ -28,8 +35,8 @@ html {
   footer {
     text-align: center;
     padding-bottom: 40px;
-    color: #d5d5d5;
-    background: #101120 radial-gradient(circle at bottom, rgba(75, 75, 165, 0.32) 5%, #101120 30%) ;
+    color: var(--text-color);
+    background: var(--main-bg-color) radial-gradient(circle at bottom, rgba(75, 75, 165, 0.32) 5%, var(--main-bg-color) 30%) ;
     overflow: hidden;
   }
   footer h1 {
@@ -37,7 +44,7 @@ html {
     margin: 0;
     padding: 20px;
     text-align: center;
-    color: #d5d5d5;
+    color: var(--text-color);
   }
 }
 
@@ -49,7 +56,7 @@ html {
 /* Navigation bar */
 
 .navbar {
-  background: #16192e;
+  background: var(--secondary-bg-color);
   overflow: hidden;
 }
 
@@ -57,13 +64,13 @@ html {
   float: left;
   font-size: 25px;
   padding: 20px 20px;
-  color: #d5d5d5;
+  color: var(--text-color);
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
 
 .navbar a:hover {
-  text-shadow: #7cafda 0 0 15px;
+  text-shadow: var(--text-glow-color) 0 0 15px;
   transform: scale(1.05);
 }
 
@@ -72,7 +79,7 @@ html {
 .main-card {
   animation: fadeIn 2s;
   font-size: 30px;
-  color: #d5d5d5;
+  color: var(--text-color);
   text-align: center;
   display: flex;
   /*height: auto;*/
@@ -81,7 +88,7 @@ html {
   padding: 1em;
   box-shadow: rgba(0, 0, 0, 0.19) 5px 5px 10px;
   border-radius: 28px;
-  background: #16192e linear-gradient(to right bottom, rgba(75, 75, 165, 0.32), #0f1120);
+  background: var(--secondary-bg-color) linear-gradient(to right bottom, rgba(75, 75, 165, 0.32), #0f1120);
   align-items: center;
 }
 
@@ -107,8 +114,8 @@ html {
 }
 
 .main-card h2 {
-  color: #ffffff;
-  text-shadow: #7cafda 0 0 5px;
+  color: white;
+  text-shadow: var(--text-glow-color) 0 0 5px;
 }
 
 .skill-list {
@@ -123,7 +130,7 @@ html {
 }
 
 .skill-list:hover {
-  box-shadow: #7cafda 0 0 5px;
+  box-shadow: var(--text-glow-color) 0 0 5px;
 }
 
 
@@ -140,14 +147,14 @@ html {
 
 .portfolio-title {
   text-align: center;
-  color: #d5d5d5;
+  color: var(--text-color);
   margin: 100px;
 }
 
 .portfolio-card {
   font-size: 30px;
-  background: #101120 linear-gradient(to bottom right, #0f1120, rgba(75, 75, 165, 0.32));
-  color: #d5d5d5;
+  background: var(--main-bg-color) linear-gradient(to bottom right, #0f1120, rgba(75, 75, 165, 0.32));
+  color: var(--text-color);
   display: flex;
   justify-content: space-evenly;
   margin: 3em 0 3em;
@@ -162,22 +169,22 @@ html {
   margin-top: 20px;
   text-decoration: none;
   font-size: 20px;
-  color: #d5d5d5;
+  color: var(--text-color);
   background: #2a2a59;
   transition: 0.2s ease-in-out;
 }
 
 .portfolio-card button:hover {
-  box-shadow: #7cafda 0 0 5px;
+  box-shadow: var(--text-glow-color) 0 0 5px;
   background: #7cafda;
-  color: #000000;
+  color: black;
   scale: 1.1 1.1;
 }
 
 .portfolio-card h2 {
   margin: 0;
-  color: #ffffff;
-  text-shadow: #7cafda 0 0 5px;
+  color: white;
+  text-shadow: var(--text-glow-color) 0 0 5px;
   padding-top: 30px;
 }
 
@@ -207,12 +214,12 @@ html {
 
 .social-links a {
   text-decoration: none;
-  color: #d5d5d5;
+  color: var(--text-color);
   transition: 0.2s ease-in-out;
 }
 
 .social-links a:hover {
-  text-shadow: #7cafda 0 0 15px;
+  text-shadow: var(--text-glow-color) 0 0 15px;
   transform: scale(1.05);
 }
 
@@ -223,7 +230,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #16192e;
+  background: var(--secondary-bg-color);
   border-radius: 28px;
   border-left: 2px solid #23284a;
 }
